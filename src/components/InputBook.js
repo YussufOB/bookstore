@@ -8,9 +8,10 @@ const InputBook = () => (
       <input type="text" placeholder="Book Title" />
       <div className="form-wrapper">
         <select name="categories" id="categories">
-          <option value="Category 1">Category 1</option>
-          <option value="Category 2">Category 2</option>
-          <option value="Category 3">Category 3</option>
+          <option value="author">Author</option>
+          <option value="author">Suzane Colins</option>
+          <option value="author">Frank Herbert</option>
+          <option value="author">Pil Colins</option>
         </select>
         <button type="button" id="add-btn">ADD BOOK</button>
       </div>
