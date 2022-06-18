@@ -15,7 +15,7 @@ const App = () => (
     <NavBar />
     <section className="content">
       <Routes>
-        <Route path="/bookstore" element={<Book />} />
+        <Route path="/" element={<Book />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/*" element={<NoMatch />} />
       </Routes>

@@ -7,14 +7,14 @@ const NavBar = () => (
   <nav>
     <ul>
       <li>
-        <NavLink className="logo" to="/bookstore">
+        <NavLink className="logo" to="/">
           Bookstore CMS
         </NavLink>
       </li>
       <li>
         <NavLink
           className={({ isActive }) => (isActive ? 'active' : '')}
-          to="/bookstore"
+          to="/"
         >
           BOOKS
         </NavLink>
