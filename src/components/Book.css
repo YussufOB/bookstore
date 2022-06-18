@@ -1,0 +1,10 @@
+.book-list-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  gap: 0.75rem; */
+  min-width: 100vw;
+  height: 100%;
+}

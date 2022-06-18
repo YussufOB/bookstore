@@ -1,0 +1,48 @@
+.input-book-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #bbb;
+  padding: 1rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.input-book-container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+
+.book-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-input input {
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.form-wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-wrapper select {
+  width: 60%;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.form-wrapper #add-btn {
+  width: 35%;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border: 0;
+  background-color: #0290ff !important;
+  color: #fff;
+}

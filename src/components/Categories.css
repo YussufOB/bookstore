@@ -1,0 +1,14 @@
+.categories-container {
+  height: 100%;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.categories-container button {
+  width: 35%;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border: 0;
+  background-color: #0290ff !important;
+  color: #fff;
+}
