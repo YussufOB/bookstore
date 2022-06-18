@@ -3,7 +3,7 @@ import './Categories.css';
 
 const Categories = () => (
   <div className="categories-container">
-    <p>Soon be available...</p>
+    <button type="button">CHECK STATUS</button>
   </div>
 );
 
