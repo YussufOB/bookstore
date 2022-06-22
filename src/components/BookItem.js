@@ -1,10 +1,20 @@
 import React from 'react';
+import { useDispatch } from 'react-redux/es/exports';
 import PropTypes from 'prop-types';
+import { removeBook } from '../redux/books/books';
 import './BookItem.css';
 import progress from '../assets/images/progress.png';
 
 const BookItem = (props) => {
-  const { title, author, categories } = props;
+  const dispatch = useDispatch();
+  const {
+    id, title, author, categories,
+  } = props;
+
+  const handleRemoveBook = () => {
+    dispatch(removeBook(id));
+  };
+
   return (
     <div className="book-container">
       <div className="block-l">
@@ -15,7 +25,7 @@ const BookItem = (props) => {
         </div>
         <div className="btns">
           <button type="button">Comments</button>
-          <button type="button">Remove</button>
+          <button type="button" onClick={handleRemoveBook}>Remove</button>
           <button type="button">Edit</button>
         </div>
       </div>
@@ -40,6 +50,7 @@ const BookItem = (props) => {
 };
 
 BookItem.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   categories: PropTypes.string.isRequired,
