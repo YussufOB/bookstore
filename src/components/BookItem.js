@@ -1,18 +1,19 @@
 import React from 'react';
 import { useDispatch } from 'react-redux/es/exports';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/books';
+import { deleteBook } from '../redux/books/books';
 import './BookItem.css';
 import progress from '../assets/images/progress.png';
 
 const BookItem = (props) => {
   const dispatch = useDispatch();
+
   const {
     id, title, author, categories,
   } = props;
 
   const handleRemoveBook = () => {
-    dispatch(removeBook(id));
+    dispatch(deleteBook(id));
   };
 
   return (

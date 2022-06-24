@@ -4,7 +4,10 @@ import { Provider } from 'react-redux';
 import './index.css';
 import store from './redux/ConfigureStore';
 import App from './App';
+// import { getBook } from './redux/books/books';
 import reportWebVitals from './reportWebVitals';
+
+// store.dispatch(getBook);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
