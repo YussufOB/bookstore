@@ -27,7 +27,7 @@ const InputBook = () => {
     document.querySelector('form').reset();
 
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title: inputState.title[0],
       author: inputState.author[0],
       category: inputState.category,

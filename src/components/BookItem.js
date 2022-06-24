@@ -5,12 +5,10 @@ import { deleteBook } from '../redux/books/books';
 import './BookItem.css';
 import progress from '../assets/images/progress.png';
 
-const BookItem = (props) => {
+const BookItem = ({
+  id, title, author, categories,
+}) => {
   const dispatch = useDispatch();
-
-  const {
-    id, title, author, categories,
-  } = props;
 
   const handleRemoveBook = () => {
     dispatch(deleteBook(id));
