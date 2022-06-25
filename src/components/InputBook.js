@@ -47,15 +47,17 @@ const InputBook = () => {
     'Indigeneous',
   ];
 
+  const isTrue = true;
+
   return (
     <form onSubmit={submitBookToStore} className="input-book-container">
-      <h1>Add New Book</h1>
+      <h1>ADD NEW BOOK</h1>
       <div className="book-input">
-        <input type="text" placeholder="Book Title" name="title" onChange={handleChange} required />
-        <input type="text" placeholder="Book Author" name="author" onChange={handleChange} required />
-        <div className="form-wrapper">
+        <input type="text" placeholder="Book Title" name="title" onChange={handleChange} id="book_title" required />
+        <input type="text" placeholder="Book Author" name="author" onChange={handleChange} id="book_author" required />
+        <div className="form_wrapper">
           <select name="category" id="categories" onChange={handleChange} required>
-            <option value="null">Select a category</option>
+            <option disabled={isTrue} value="">Category</option>
             {
               categoriesList.map((category) => (
                 <option key={category} value={category}>{category}</option>

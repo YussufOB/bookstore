@@ -18,19 +18,19 @@ const BookItem = ({
     <div className="book-container">
       <div className="block-l">
         <div className="info">
-          <span className="categories">{categories}</span>
-          <h2>{title}</h2>
-          <h3>{author}</h3>
+          <span className="categories grey_text">{categories}</span>
+          <h2 className="bold_tex">{title}</h2>
+          <h3 className="blue_text bold_text author">{author}</h3>
         </div>
         <div className="btns">
-          <button type="button">Comments</button>
-          <button type="button" onClick={handleRemoveBook}>Remove</button>
-          <button type="button">Edit</button>
+          <button type="button" className="nb blue_text">Comments</button>
+          <button type="button" className="border_left blue_text" onClick={handleRemoveBook}>Remove</button>
+          <button type="button" className="border_left blue_text">Edit</button>
         </div>
       </div>
       <div className="block-r">
         <div className="stats">
-          <figure>
+          <figure className="border_right">
             <img className="progress-circle" alt="progress-circle" src={progress} />
           </figure>
           <div className="progress-text">
@@ -40,8 +40,8 @@ const BookItem = ({
         </div>
       </div>
       <div className="progress-info">
-        <span className="chapter-title">Current chapter</span>
-        <span className="chapter-number">Chapter 3</span>
+        <span className="chapter-title grey_text">CURRENT CHAPTER</span>
+        <span className="chapter-number grey_text">Chapter 3</span>
         <button type="button">UPDATE PROGRESS</button>
       </div>
     </div>
